@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:sans-serif;
+        }
+
+        body {
+            margin: 20px 35px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        html {
+            margin: 5px;
+            border-color: black;
+            border-width: 5px;
+            border-style: dashed;
+            
+        }
+
+        ul li {
+            margin: 5px 0px;
+        }
+
+        hr {
+            height: 5px;
+            background-color: black;
+        }
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            margin: 22px;
+        }
+
+        .top h1 {
+            margin: 7px 0px;
+        }
+
+        .top h4 {
+            margin: 7px 0px;
+
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0px;
+            justify-content: center;
+        }
+
+        .experience {
+            margin: 4px 0px;
+        }
+
+        .experience h2 {
+            font-weight: 900;
+        }
+
+        .education {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0px;
+        }
+
+        .langsntechs {
+            display: flex;
+            flex: 3; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-self: center;
+            width: fit-content;
+            margin-right: 7px;
+        }
+
+        .titles {
+            flex: 1;
+            display: flex;
+            align-self: flex-start; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            width: fit-content;
+            margin-right: 4px;
+            padding: 0;
+        }
+
+        @media only screen and (max-width: 859px) {
+
+            .langsntechs {
+                font-size: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 808px) {
+            .titles {
+                font-size: 14px;
+            }
+
+            .langsntechs {
+                font-size: 12px;
+                justify-content: space-between;
+                height: fit-content;
+            }
+        }
+
+        @media only screen and (max-width: 679px) {
+
+            .skills {
+                height: 100%;
+            }
+
+            .titles {
+                font-size: 11px;
+            }
+
+            .langsntechs {
+                font-size: 10px;
+                word-wrap: nowrap;
+                margin: 10px;
+            }
+
+            .langsntechs h3 {
+                width: max-content;
+            }
+        }
+
+        @media only screen and (max-width: 505px) {
+            .langsntechs h3 {
+                width: fit-content;
+            }
+
+            .langsntechs {
+                width: fit-content;
+                padding: 5px;
+            }
+
+            .top h1,h2 {
+                font-size: 18px;
+            }
+
+            .top h4 {
+                font-size: 8px;
+            }
+
+            .titles {
+                height: 100%;
+                align-self: center;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="top">
+        <h1>Hasan_El_Nahas</h1>
+        <h4>Santa Maria, Malabo, Equatorial Guinea</h4>
+        <h2>
+            {
+            <a href="https://github.com/darkvader42" target="_blank">GITHUB</a>
+             ⋄
+            <a href="#">LINKEDIN</a> 
+            }
+        </h2>
+    </div>
+
+
+    <div class="skills">
+        <h1><b>SKILLS</b></h1><hr>
+
+        <div style="display: flex; justify-content: space-around; margin: 5px; height: 100%;">
+            <div class="titles">
+                <h3 style="font-weight: 900;">Languages: </h3>
+                <br>
+                <h3 style="font-weight: 900;">Technologies: </h3>
+            </div>
+    
+            <div class="langsntechs">
+                <h3>C - C++ - Javascript - PHP - HTML - CSS</h3>
+                <br>
+                <h3>NodeJS - Github - GIT VCS - XAMPP</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="experience">
+
+        <h1><b>EXPERIENCE</b></h1><hr>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0px 0px 0px">
+            <h2>OVERVIEW</h2>
+        </div>
+        <div style="margin: 0px 20px;">
+            <ul>
+                <li><h4>Seasoned, experienced self taught developer with 5+ years of experience in the field. I enjoy problem solving and turning my ideas into reality.</h4></li>
+            </ul>
+        </div>
+
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0px;">
+            <h2>Software Engineer</h2>
+        </div>
+        <div style="margin: 0px 20px;">
+            <ul>
+                <li><h4>Built a Chat Application using raw Sockets and Winsock Library provided by the win32 API</h4></li>
+                <li><h4>Made a console based multiplayer Tic-Tac-Toe game</h4></li>
+            </ul>
+        </div>
+
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0px;">
+            <h2>Cybersecurity Researcher</h2>
+        </div>
+        <div style="margin: 0px 20px;">
+            <ul>
+                <li><h4>Cross-validated password strength on a 7000-point dataset and discovered that roughly 35% of
+                    passwords can be trivially defeated, identifying ineffective password security practices.</h4></li>
+                <li><h4>Strong knowledge of static and dynamic analysis methods of executables.</h4></li>
+            </ul>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0px;">
+            <h2>Web Developer</h2>
+        </div>
+        <div style="margin: 0px 20px;">
+            <ul>
+                <li><h4>Made a signup/login system in php, with an ability to post/view comments posted by any signed up user.</h4></li>
+                <li><h4>Worked on API's using NodeJS's HTTP package and expressJS.</h4></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="education">
+        <h1><b>EDUCATION</b></h1><hr>
+
+        <div style="margin: 10px 20px;">
+            <ul>
+                <li>
+                    <h4>Majoring in Computer Science.</h4>
+                </li>
+                <li>
+                    <h4>Studying for the CISCO CCNA certificate.</h4>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
